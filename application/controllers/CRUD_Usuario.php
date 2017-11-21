@@ -54,7 +54,7 @@ class CRUD_Usuario extends CI_Controller {
 			$this->session->set_userdata('login', $login);
 			$this->session->set_userdata('senha', $senha);
 			$this->session->set_userdata('logado', true);
-			$this->retrieve();
+			redirect('/CRUD_Planta/index');
 		} else {
 			$this->session->set_flashdata('loginbad','O usuário ou a senha estão errados');
 			$this->session->set_userdata('logado', false);

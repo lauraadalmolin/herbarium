@@ -1,6 +1,4 @@
-<?php 
-if ($this->session->userdata('logado') == true) {
-            
+<?php             
     echo "<br>";
     echo "<br>";
     echo "<div class='center_align small_div'>";
@@ -27,6 +25,3 @@ if ($this->session->userdata('logado') == true) {
         echo form_submit(array('name'=>'cadastrar'), 'Cadastrar');
         echo "</div></div>";
     echo form_close();
-} else {
-         include "erro_permissao.php";
-}
