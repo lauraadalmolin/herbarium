@@ -112,7 +112,7 @@ class CRUD_Planta extends CI_Controller {
 
 	private function realizaUpload($id){
 		$config['upload_path'] = './uploads/';
-        $config['allowed_types'] = 'jpg|png';
+        $config['allowed_types'] = 'jpg|png|jpeg';
         $config['file_name'] = $id;
 
         $this->load->library('upload', $config);
