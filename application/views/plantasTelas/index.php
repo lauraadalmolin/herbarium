@@ -21,7 +21,7 @@
 							echo "<div class='col-md-4'>";
 								echo "<div class='card'>";
 									echo "<img height='200px' width='100px' class='card-img-top' src='../uploads/" . $linha->id . $linha->foto . "/>";
-									echo "<h5 class='card-title text-center'> <a href='/CRUD_Planta/Detalhes/$linha->id'> $linha->nome </a> </h5>";
+									echo "<h5 class='card-title text-center'> <a class='card-title text-center' href='/CRUD_Planta/Detalhes/$linha->id'> $linha->nome </a> </h5>";
 									echo "<div class='card-body'>";
 										echo "<div class='text-right'>";
 											echo anchor("/CRUD_Planta/editar/$linha->id", "<img height='25px' width='25px' src='../uploads/imagens/lapis.png'>");
