@@ -76,7 +76,6 @@ class CRUD_Planta extends CI_Controller {
         	$this->Planta_model->editar($id, $data);
 
         	if($newFoto !== ''){
-        		echo 'dedo no cu e gritaria';
         		$oldFoto = $this->input->post('oldExt');
         		unlink('./uploads/' . $id. $oldFoto);
         		$this->realizaUpload($id);
